@@ -7,12 +7,13 @@ int main(int argc, char **argv)
 	void reverse(char *x, int begin, int end);
 	char input_char[10];
 
-	printf("Insert text");
+	printf("\nInsert text: ");
 	fgets(input_char, 10, stdin);
 
 	reverse(input_char, 0, strlen(input_char) - 1);
 
-	printf("%s\n", input_char);
+	printf("\nReverse: ");
+	fputs(input_char, stdout);
 
 	return 0;
 }
